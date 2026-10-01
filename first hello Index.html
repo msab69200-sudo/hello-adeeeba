@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Hello Adeeeba 🌸</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #fff5f8, #ffe5ed);
+      overflow: hidden;
+    }
+
+    .card {
+      width: 90%;
+      max-width: 420px;
+      padding: 40px 25px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.92);
+      border-radius: 28px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+      animation: appear 1s ease;
+    }
+
+    .flower {
+      font-size: 55px;
+      animation: float 2s ease-in-out infinite;
+    }
+
+    h1 {
+      color: #d6336c;
+      margin: 15px 0 10px;
+      font-size: 32px;
+    }
+
+    .intro {
+      color: #555;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    button {
+      border: none;
+      padding: 14px 25px;
+      border-radius: 30px;
+      background: #d6336c;
+      color: white;
+      font-size: 16px;
+      margin-top: 15px;
+      cursor: pointer;
+      box-shadow: 0 6px 15px rgba(214, 51, 108, 0.25);
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+
+    #message {
+      display: none;
+      margin-top: 25px;
+      color: #555;
+      line-height: 1.7;
+      animation: messageIn 0.8s ease;
+    }
+
+    .small {
+      font-size: 14px;
+      color: #999;
+      margin-top: 25px;
+    }
+
+    @keyframes appear {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes messageIn {
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-8px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <div class="flower">🌸</div>
+
+    <h1>Hello Adeeeba 😊</h1>
+
+    <p class="intro">
+      Socha pehla message thora different hona chahiye...<br>
+      isliye ek choti si website bana di. 😄
+    </p>
+
+    <button onclick="showMessage()">
+      Click here 💌
+    </button>
+
+    <div id="message">
+
+      <p>
+        Assalamualaikum Adeeeba 😊
+      </p>
+
+      <p>
+        Hope you're doing well 🌸
+      </p>
+
+      <p>
+        Bas socha ke pehla "Hello" thora special tareeqe se kaha jaye. 😄
+      </p>
+
+      <p>
+        <b>Hello! 👋❤️</b>
+      </p>
+
+    </div>
+
+    <div class="small">
+      Made with a little bit of code & a lot of thought 💻🌸
+    </div>
+
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
